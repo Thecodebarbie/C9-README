@@ -10,7 +10,7 @@ const questions = [{
 }, {
     type:'list',
     message:'What is your project title?',
-    name:'license'
+    name:'license',
     choices:['MIT', 'Apache', 'IBM', 'No License']
 }];
 
