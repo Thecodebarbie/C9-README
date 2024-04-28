@@ -1,6 +1,8 @@
 // TODO: Include packages needed for this application
-const generateMarkdown = require('.utils/generateMarkdown')
+const generateMarkdown = require('./utils/generateMarkdown');
 
+
+const fs=require('fs');
 const inquire = require('inquirer')
 // TODO: Create an array of questions for user input
 const questions = [{
@@ -15,7 +17,16 @@ const questions = [{
 }];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    const content = generateMarkdown(data)
+    fs.writeFile(fileName,content, err=>{
+        if(err){
+            console.log(err)
+            return
+        }
+        console.log('Sucess!')
+    })
+}
 
 // TODO: Create a function to initialize app
 function init() {
