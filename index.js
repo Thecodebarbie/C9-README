@@ -14,6 +14,17 @@ const questions = [{
     message:'What is your project title?',
     name:'license',
     choices:['MIT', 'Apache', 'IBM', 'No License']
+}, {
+    type:'input',
+    message:'Provide a brief description of your project:',
+    name:'description',
+    validate: function(input){
+        if (input.length > 0) {
+            return true;
+        }else {
+            return 'Please enter a description for your project.';
+        }
+    }
 }];
 
 // TODO: Create a function to write README file
