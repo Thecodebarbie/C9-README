@@ -15,7 +15,14 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  if (license === "MIT") {
+    return "https://opensource.org/licenses/MIT";
+  } else {
+    console.log("License type is not MIT");
+    return ""; // Return an empty string for other licenses or invalid input
+  }
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
@@ -53,7 +60,7 @@ ${data.contributing}
 
 ## License
 
-${renderLicenseSection(data.license)}
+${renderLicenseLink(data.license)}
 
 ## Badges
 
