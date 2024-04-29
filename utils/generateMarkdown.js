@@ -64,7 +64,7 @@ ${renderLicenseLink(data.license)}
 
 ## Badges
 
-${data.badges}
+${data.badges ? data.badges + '\n' : ''}![Static Badge](https://img.shields.io/badge/theCODEbarbie-%23FBF6E9?style=for-the-badge&logo=Spotlight&labelColor=%23F79AD3)
 
 ## Tests
 

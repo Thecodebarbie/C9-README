@@ -58,7 +58,19 @@ const questions = [{
             return 'Please provide guidelines for contributing.';
         }
     }
+},{
+    type: 'input',
+    message: 'Provide instructions for running tests:',
+    name: 'tests',
+    validate: function(input) {
+        if (input.trim()) {
+            return true;
+        } else {
+            return 'Please provide instructions for running tests.';
+        }
+    }
 }
+
 
 ];
 
