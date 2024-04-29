@@ -47,7 +47,19 @@ const questions = [{
             return 'Please provide usage instructions for your project.';
         }
     }
+},{
+    type: 'input',
+    message: 'Provide guidelines for contributing:',
+    name: 'contributing',
+    validate: function(input) {
+        if (input.trim()) {
+            return true;
+        } else {
+            return 'Please provide guidelines for contributing.';
+        }
+    }
 }
+
 ];
 
 // TODO: Create a function to write README file
