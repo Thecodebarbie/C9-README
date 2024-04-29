@@ -82,7 +82,7 @@ function writeToFile(fileName, data) {
             console.log(err)
             return
         }
-        console.log('Sucess!')
+        console.log('Success!')
     })
 }
 
