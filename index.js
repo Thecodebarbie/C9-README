@@ -36,7 +36,19 @@ const questions = [{
             return 'Please provide installation instructions for your project.';
         }
     }
-}];
+}, {
+    type: 'input',
+    message: 'Provide usage instructions:',
+    name: 'usage',
+    validate: function(input) {
+        if (input.length > 0) {
+            return true;
+        } else {
+            return 'Please provide usage instructions for your project.';
+        }
+    }
+}
+];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
