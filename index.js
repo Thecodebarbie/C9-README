@@ -25,6 +25,17 @@ const questions = [{
             return 'Please enter a description for your project.';
         }
     }
+}, {
+    type: 'input',
+    message: 'Provide installation instructions:',
+    name: 'installation',
+    validate: function(input) {
+        if (input.length > 0) {
+            return true;
+        } else {
+            return 'Please provide installation instructions for your project.';
+        }
+    }
 }];
 
 // TODO: Create a function to write README file
