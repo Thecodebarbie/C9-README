@@ -15,6 +15,7 @@ The README Generator is a command-line application designed to simplify the proc
   - [Technologies Used](#technologies-used)
   - [Installation](#installation)
   - [Usage](#usage)
+  - [Walkthrough](#walkthrough)
   - [License](#license)
 
 ## Features
@@ -42,6 +43,11 @@ To use the README Generator:
 1. After installing dependencies, run `node index.js` in your terminal.
 2. Follow the prompts to enter information about your project.
 3. Once all prompts are completed, the README.md file will be generated in the `output` directory.
+
+## Walkthrough
+
+Please click the link to watch the tutorial.
+https://drive.google.com/file/d/1hTfP47P_yMg7pEAYHQnbNHi9HUjglblk/view?usp=share_link
 
 ## License
 
