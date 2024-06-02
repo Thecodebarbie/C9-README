@@ -11,7 +11,7 @@ const questions = [{
     name:'title'
 }, {
     type:'list',
-    message:'What is your project title?',
+    message:'What license would you like to choose?',
     name:'license',
     choices:['MIT', 'Apache', 'IBM', 'No License']
 }, {
